@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-api
+  namespace: demo
+  labels:
+    app: demo-api
+spec:
+  type: LoadBalancer
+  ports:
+  - name: http-protocol
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: demo-api

@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: demo-app-image
+  newName: omegaes/gke-demo-app
+  newTag: 82bf23f
+resources:
+- namespace.yaml
+- demo-api-deployment.yaml
+- demo-api-service.yaml
