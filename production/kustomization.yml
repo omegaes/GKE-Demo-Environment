@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: demo-app-image
   newName: omegaes/gke-demo-app
-  newTag: 82bf23f
+  newTag: 690168e
 resources:
 - namespace.yaml
 - demo-api-deployment.yaml
